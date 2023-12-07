@@ -1,19 +1,19 @@
 {
 	"private": true,
-	"name": "vscode-html1",
+	"name": "vscode-twirl",
 	"version": "0.0.1",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/volarjs/starter.git",
+		"url": "https://github.com/proudust/vscode-twirl",
 		"directory": "packages/vscode"
 	},
 	"categories": [
 		"Programming Languages"
 	],
-	"displayName": "HTML1 Language Features",
-	"description": "HTML1 Language Features",
-	"author": "volarjs",
-	"publisher": "volarjs",
+	"displayName": "Twirl (Unofficial)",
+	"description": "Play Framework Template Engine Support for Visual Studio Code",
+	"author": "Proudust",
+	"publisher": "Proudust",
 	"engines": {
 		"vscode": "^1.82.0"
 	},
@@ -24,10 +24,23 @@
 	"contributes": {
 		"languages": [
 			{
-				"id": "html1",
+				"id": "scala.html",
 				"extensions": [
-					".html1"
+					".scala.html"
+				],
+				"aliases": [
+					"Twirl (HTML)"
 				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "scala.html",
+				"scopeName": "source.scala.html",
+				"path": "./syntaxes/scala.html.tmGrammar.json",
+				"embeddedLanguages": {
+					"text.html": "html"
+				}
 			}
 		]
 	},

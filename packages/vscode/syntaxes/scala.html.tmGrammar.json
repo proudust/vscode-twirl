@@ -1,0 +1,33 @@
+{
+    "name": "Twirl (HTML)",
+    "scopeName": "source.scala.html",
+    "fileTypes": [
+        "scala.html"
+    ],
+    "injections": {
+        "source.scala.html": {
+            "patterns": [
+                {
+                    "include": "#comment"
+                }
+            ]
+        }
+    },
+    "patterns": [
+        {
+            "include": "text.html.basic"
+        }
+    ],
+    "repository": {
+        "comment": {
+            "begin": "@\\*",
+            "end": "\\*@",
+            "captures": {
+                "0": {
+                    "name": "punctuation.definition.comment.twirl"
+                }
+            },
+            "name": "comment.block.twirl"
+        }
+    }
+}
